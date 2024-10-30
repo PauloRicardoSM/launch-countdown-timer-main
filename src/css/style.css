@@ -1,0 +1,24 @@
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+body {
+  background-image: url("../images/bg-stars.svg");
+  background-repeat: no-repeat;
+  background-color: hsl(236, 21%, 26%);
+  color: white;
+}
+body footer {
+  background-image: url("../images/pattern-hills.svg");
+  background-size: cover;
+  min-height: 25rem;
+}
+body .attribution {
+  font-size: 11px;
+  text-align: center;
+}
+body .attribution a {
+  color: hsl(228, 45%, 44%);
+}/*# sourceMappingURL=style.css.map */

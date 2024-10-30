@@ -1,0 +1,29 @@
+@use 'mixins';
+
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    background-image: url('../images/bg-stars.svg');
+    background-repeat: no-repeat;
+    background-color: hsl(236, 21%, 26%);
+    color: white;
+
+    footer {
+        background-image: url('../images/pattern-hills.svg');
+        background-size: cover;
+        min-height: 25rem;
+    }
+
+    .attribution {
+        font-size: 11px; 
+        text-align: center;
+
+        a { 
+            color: hsl(228, 45%, 44%); 
+        }
+    }
+}
