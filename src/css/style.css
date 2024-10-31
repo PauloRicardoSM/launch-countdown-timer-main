@@ -6,7 +6,8 @@
 
 body {
   background-image: url("../images/bg-stars.svg");
-  background-repeat: no-repeat;
+  background-repeat: repeat;
+  background-size: contain;
   background-color: hsl(234, 17%, 12%);
   color: white;
 }
@@ -15,11 +16,20 @@ body .cInterface {
   grid-template-rows: 70vh 30vh;
   min-height: 100vh;
 }
-body .cInterface footer {
+body .cInterface-Footer {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
   background-image: url("../images/pattern-hills.svg");
   background-size: contain;
   background-repeat: no-repeat;
   background-position: bottom;
+}
+body .cInterface-Footer-SocialMidias {
+  display: flex;
+  gap: 2.5rem;
+  margin-bottom: 1rem;
 }
 body .cInterface-Main {
   display: flex;
