@@ -1,4 +1,5 @@
 @use 'mixins';
+@use 'variables';
 
 * {
     box-sizing: border-box;
@@ -9,21 +10,49 @@
 body {
     background-image: url('../images/bg-stars.svg');
     background-repeat: no-repeat;
-    background-color: hsl(236, 21%, 26%);
+    background-color: variables.$veryDarkMostlyBlackBlue;
     color: white;
 
-    footer {
-        background-image: url('../images/pattern-hills.svg');
-        background-size: cover;
-        min-height: 25rem;
-    }
+    .cInterface {
+        // @include mixins.flexCenter;
 
-    .attribution {
-        font-size: 11px; 
-        text-align: center;
+        display: grid;
+        grid-template-rows: 70vh 30vh;
+        min-height: 100vh;
 
-        a { 
-            color: hsl(228, 45%, 44%); 
+        footer {            
+            background-image: url('../images/pattern-hills.svg');
+            background-size: contain;
+            background-repeat: no-repeat;
+            background-position: bottom;
+        }
+
+        &-Main {
+            @include mixins.flexCenter;
+
+            flex-direction: column;
+
+            &-TimerList {
+                @include mixins.flexCenter;
+
+                margin-top: 3rem;
+                list-style: none;
+                gap: 1rem;
+                &-Items { 
+                    @include mixins.flexCenter;
+                    
+                    flex-direction: column;                   
+                }
+            }
+        }
+    
+        .attribution {
+            font-size: 11px; 
+            text-align: center;
+
+            a { 
+                color: hsl(228, 45%, 44%); 
+            }
         }
     }
 }

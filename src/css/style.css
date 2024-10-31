@@ -7,18 +7,44 @@
 body {
   background-image: url("../images/bg-stars.svg");
   background-repeat: no-repeat;
-  background-color: hsl(236, 21%, 26%);
+  background-color: hsl(234, 17%, 12%);
   color: white;
 }
-body footer {
-  background-image: url("../images/pattern-hills.svg");
-  background-size: cover;
-  min-height: 25rem;
+body .cInterface {
+  display: grid;
+  grid-template-rows: 70vh 30vh;
+  min-height: 100vh;
 }
-body .attribution {
+body .cInterface footer {
+  background-image: url("../images/pattern-hills.svg");
+  background-size: contain;
+  background-repeat: no-repeat;
+  background-position: bottom;
+}
+body .cInterface-Main {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+}
+body .cInterface-Main-TimerList {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin-top: 3rem;
+  list-style: none;
+  gap: 1rem;
+}
+body .cInterface-Main-TimerList-Items {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+}
+body .cInterface .attribution {
   font-size: 11px;
   text-align: center;
 }
-body .attribution a {
+body .cInterface .attribution a {
   color: hsl(228, 45%, 44%);
 }/*# sourceMappingURL=style.css.map */
