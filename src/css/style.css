@@ -36,6 +36,9 @@ body .cInterface-Footer-SocialMidias {
   gap: 2rem;
   margin-top: 5rem;
 }
+body .cInterface-Footer-SocialMidias i {
+  font-size: 2rem;
+}
 body .cInterface-Footer .attribution {
   font-size: 11px;
   text-align: center;
