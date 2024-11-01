@@ -18,20 +18,31 @@ body {
         display: grid;
         grid-template-rows: 70vh 30vh;
         min-height: 100vh;
+        background-image: url('../images/pattern-hills.svg');
+        background-repeat: no-repeat;
+        background-position: bottom right;
 
         &-Footer {  
-            @include mixins.flexCenter;
-
-            flex-direction: column;
-            background-image: url('../images/pattern-hills.svg');
-            background-size: contain;
-            background-repeat: no-repeat;
-            background-position: bottom;
+            display: grid;
+            grid-template-rows: 90% 10%;
 
             &-SocialMidias {
-                display: flex;
-                gap: 2.5rem;
+                display: grid;
+                grid-template-columns: 1fr 1fr 1fr;
                 margin-bottom: 1rem;
+
+                &-Img {
+                    @include
+                }
+            }
+
+            .attribution {
+                font-size: 11px; 
+                text-align: center;
+    
+                a { 
+                    color: hsl(228, 45%, 44%); 
+                }
             }
         }
 
@@ -51,15 +62,6 @@ body {
                     
                     flex-direction: column;                   
                 }
-            }
-        }
-    
-        .attribution {
-            font-size: 11px; 
-            text-align: center;
-
-            a { 
-                color: hsl(228, 45%, 44%); 
             }
         }
     }
