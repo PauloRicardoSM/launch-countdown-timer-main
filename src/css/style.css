@@ -13,6 +13,7 @@ body {
   background-size: contain;
   background-color: hsl(234, 17%, 12%);
   color: white;
+  overflow: hidden;
 }
 body .cInterface {
   display: grid;
@@ -20,7 +21,48 @@ body .cInterface {
   min-height: 100vh;
   background-image: url("../images/pattern-hills.svg");
   background-repeat: no-repeat;
-  background-position: bottom right;
+  background-position: bottom right -10rem;
+}
+body .cInterface-Main {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+}
+body .cInterface-Main h1 {
+  text-align: center;
+  font-size: 1.2rem;
+  letter-spacing: 0.4rem;
+}
+body .cInterface-Main-TimerList {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin-top: 3rem;
+  list-style: none;
+  gap: 1rem;
+}
+body .cInterface-Main-TimerList-Items {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+}
+body .cInterface-Main-TimerList-Items span {
+  font-size: 2.9rem;
+}
+body .cInterface-Main-TimerList-Items p {
+  font-size: 0.5rem;
+  color: hsl(237, 18%, 59%);
+  letter-spacing: 0.15rem;
+}
+body .cInterface-Main-TimerList-Items .flip-card {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  position: relative;
+  perspective: 1000px;
 }
 body .cInterface-Footer {
   display: grid;
@@ -38,6 +80,7 @@ body .cInterface-Footer-SocialMidias {
 }
 body .cInterface-Footer-SocialMidias i {
   font-size: 2rem;
+  color: hsl(237, 18%, 59%);
 }
 body .cInterface-Footer .attribution {
   font-size: 11px;
@@ -45,35 +88,4 @@ body .cInterface-Footer .attribution {
 }
 body .cInterface-Footer .attribution a {
   color: hsl(228, 45%, 44%);
-}
-body .cInterface-Main {
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  flex-direction: column;
-  letter-spacing: 0.4rem;
-}
-body .cInterface-Main h1 {
-  text-align: center;
-  font-size: 1.2rem;
-}
-body .cInterface-Main-TimerList {
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  margin-top: 3rem;
-  list-style: none;
-  gap: 1rem;
-}
-body .cInterface-Main-TimerList-Items {
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  flex-direction: column;
-}
-body .cInterface-Main-TimerList-Items span {
-  font-size: 2rem;
-}
-body .cInterface-Main-TimerList-Items p {
-  font-size: 0.5rem;
 }/*# sourceMappingURL=style.css.map */

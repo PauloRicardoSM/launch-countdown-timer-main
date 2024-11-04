@@ -16,6 +16,7 @@ body {
     background-size: contain;
     background-color: variables.$veryDarkMostlyBlackBlue;
     color: white;
+    overflow: hidden;
 
     .cInterface {
         display: grid;
@@ -23,14 +24,61 @@ body {
         min-height: 100vh;
         background-image: url('../images/pattern-hills.svg');
         background-repeat: no-repeat;
-        background-position: bottom right;
+        background-position: bottom right -10rem;
+   
+        &-Main {
+            @include mixins.flexCenter;
+            
+            flex-direction: column;
+            
+            h1 {
+                text-align: center;
+                font-size: 1.2rem;
+                letter-spacing: .4rem;
+            }
+            
+            &-TimerList {
+                @include mixins.flexCenter;
+                
+
+                margin-top: 3rem;
+                list-style: none;
+                gap: 1rem;
+                
+                &-Items { 
+                    @include mixins.flexCenter;
+
+                    flex-direction: column;
+
+                    span {
+                        font-size: 2.9rem;
+                    }
+                    
+                    p {
+                        font-size: .5rem;
+                        color: variables.$grayishBlue;
+                        letter-spacing: .15rem;
+                    }
+
+                    .flip-card {
+                        @include mixins.flexCenter;
+
+                        flex-direction: column;
+                        position: relative;
+                        perspective: 1000px;
+                        
+                        
+                    }
+                }
+            }
+        }
 
         &-Footer {  
             display: grid;
             grid-template-rows: 90% 10%;
             align-items: center;
             justify-items: center;
-
+        
             &-SocialMidias {
                 display: grid;
                 grid-template-columns: 1fr 1fr 1fr;
@@ -38,52 +86,19 @@ body {
                 justify-items: center;
                 gap: 2rem;
                 margin-top: 5rem;
-
+        
                 i {
                     font-size: 2rem;
+                    color: variables.$grayishBlue;
                 }
             }
-
+        
             .attribution {
                 font-size: 11px; 
                 text-align: center;
-    
+        
                 a { 
                     color: hsl(228, 45%, 44%); 
-                }
-            }
-        }
-
-        &-Main {
-            @include mixins.flexCenter;
-
-            flex-direction: column;
-            letter-spacing: .4rem;
-
-            h1 {
-                text-align: center;
-                font-size: 1.2rem
-            }
-
-            &-TimerList {
-                @include mixins.flexCenter;
-
-                margin-top: 3rem;
-                list-style: none;
-                gap: 1rem;
-
-                &-Items { 
-                    @include mixins.flexCenter;
-                    
-                    flex-direction: column;
-                    
-                    span {
-                        font-size: 2rem;
-                    }
-
-                    p {
-                        font-size: .5rem;
-                    }
                 }
             }
         }
