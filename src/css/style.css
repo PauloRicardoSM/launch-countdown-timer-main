@@ -47,22 +47,14 @@ body .cInterface-Main-TimerList-Items {
   justify-content: center;
   align-items: center;
   flex-direction: column;
-}
-body .cInterface-Main-TimerList-Items span {
-  font-size: 2.9rem;
+  text-align: center;
 }
 body .cInterface-Main-TimerList-Items p {
   font-size: 0.5rem;
   color: hsl(237, 18%, 59%);
-  letter-spacing: 0.15rem;
 }
-body .cInterface-Main-TimerList-Items .flip-card {
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  flex-direction: column;
-  position: relative;
-  perspective: 1000px;
+body .cInterface-Main-TimerList-Items span {
+  font-size: 2.9rem;
 }
 body .cInterface-Footer {
   display: grid;
