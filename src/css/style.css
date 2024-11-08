@@ -52,43 +52,46 @@ body .cInterface-Main-TimerList-Items {
 body .cInterface-Main-TimerList-Items p {
   font-size: 0.5rem;
   color: hsl(237, 18%, 59%);
+  margin-top: 0.5rem;
 }
-body .cInterface-Main-TimerList-Items span {
-  font-size: 2.9rem;
-}
-body .cInterface-Main-TimerList-Items .flip-box {
-  background-color: transparent;
-  border: 1px solid #f1f1f1;
-  perspective: 1000px;
-  width: 100%;
-  height: 100%;
-}
-body .cInterface-Main-TimerList-Items .flip-box-inner {
+body .cInterface-Main-TimerList-Items .cBg {
   position: relative;
-  width: 100%;
-  height: 100%;
-  text-align: center;
-  transition: transform 0.8s;
-  transform: preserve-3d;
+  font-size: 2.9rem;
+  font-weight: 800;
+  padding: 0.5rem;
+  border-radius: 0.5rem;
+  box-shadow: 0rem 0.3rem 0.1rem rgba(52, 54, 80, 0.2);
 }
-body .cInterface-Main-TimerList-Items .flip-box-inner-front, body .cInterface-Main-TimerList-Items .flip-box-inner-back {
+body .cInterface-Main-TimerList-Items .cBg::before {
+  content: "";
   position: absolute;
+  top: 0;
+  left: 0;
   width: 100%;
-  height: 100%;
-  -webkit-backface-visibility: hidden;
-  backface-visibility: hidden;
+  height: 50%;
+  background-color: rgba(52, 54, 80, 0.4);
+  border-radius: 0.5rem;
+  pointer-events: none;
+  z-index: 2;
 }
-body .cInterface-Main-TimerList-Items .flip-box-inner-front {
-  background-color: dodgerblue;
-  color: white;
+body .cInterface-Main-TimerList-Items .cBg::after {
+  content: "";
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  width: 100%;
+  height: 50%;
+  background-color: hsl(236, 21%, 26%);
+  border-radius: 0.5rem;
+  pointer-events: none;
 }
-body .cInterface-Main-TimerList-Items .flip-box-inner-back {
-  background-color: #bbb;
-  color: white;
-  transform: rotateX(180deg);
-}
-body .cInterface-Main-TimerList-Items .flip-box:hover {
-  transform: rotateX(180deg);
+body .cInterface-Main-TimerList-Items .cBg .flip-card {
+  position: relative;
+  color: hsl(345, 95%, 68%);
+  font-size: 2.9rem;
+  font-weight: 800;
+  border-radius: 0.5rem;
+  z-index: 1;
 }
 body .cInterface-Footer {
   display: grid;
