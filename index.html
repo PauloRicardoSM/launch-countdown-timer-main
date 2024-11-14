@@ -11,6 +11,10 @@
   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
   <title>Frontend Mentor | Launch countdown timer</title>
 
+  <!-- Import the Jquery over CDN -->
+  <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+  <!-- Import the GSAP over CDN -->
+   <script src="https://cdnjs.cloudflare.com/ajax/libs/gsab/3.11.5/gsap.min.js"></script>
 </head>
 
 <body>
@@ -22,28 +26,28 @@
       <ul class="cInterface-Main-TimerList">
         <li class="cInterface-Main-TimerList-Items">
           <div class="cBg">
-            <span class="flip-card">00</span>
+            <span id="iDays" class="flip-card">00</span>
           </div>
           <p>Days</p>
         </li>
 
         <li class="cInterface-Main-TimerList-Items">
           <div class="cBg">
-            <span class="flip-card">00</span>
+            <span id="iHours" class="flip-card">00</span>
           </div>
           <p>Hours</p>
         </li>
 
         <li class="cInterface-Main-TimerList-Items">
           <div class="cBg">
-            <span class="flip-card">00</span>
+            <span id="iMinutes" class="flip-card">00</span>
           </div>
           <p>Minutes</p>
         </li>
 
         <li class="cInterface-Main-TimerList-Items">
           <div class="cBg">
-            <span class="flip-card">00</span>
+            <span id="iSeconds" class="flip-card">00</span>
           </div>
           <p>Seconds</p>
         </li>
@@ -63,6 +67,8 @@
       </div>
     </footer>
   </div>
+
+  <script src="./src/js/script.js"></script>
 </body>
 
 </html>
