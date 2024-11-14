@@ -43,7 +43,7 @@ body {
                 margin-top: 3rem;
                 list-style: none;
                 gap: 1rem;
-                
+
                 &-Items { 
                     @include mixins.flexCenter;
                     
@@ -58,7 +58,6 @@ body {
 
                     .cBg {
                         position: relative;
-                        font-size: 2.9rem;
                         font-weight: 800;
                         padding: 0.5rem;
                         border-radius: 0.5rem;
@@ -92,7 +91,7 @@ body {
                         .flip-card {
                             position: relative;
                             color: variables.$softRed;
-                            font-size: 2.9rem;
+                            font-size: 2.3rem;
                             font-weight: 800;
                             border-radius: .5rem;
                             z-index: 1;
@@ -123,11 +122,13 @@ body {
             }
         
             .attribution {
-                font-size: 11px; 
+                font-size: .6rem; 
                 text-align: center;
+                margin-bottom: .5rem;
         
                 a { 
-                    color: hsl(228, 45%, 44%); 
+                    color: variables.$grayishBlue;
+                    text-decoration: none;
                 }
             }
         }
