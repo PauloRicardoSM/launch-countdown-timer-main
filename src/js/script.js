@@ -21,6 +21,12 @@ $(document).ready(function() {
         $("#iHours").text(hours);
         $("#iMinutes").text(minutes);
         $("#iSeconds").text(seconds);
+
+        gsap.to(".flip-card", {
+            rotationX: 180,
+            duration: 1,
+            ease: "powe2.inOut"
+        });
     }
 
     const timerInterval = setInterval(updateTimer, 1000);
