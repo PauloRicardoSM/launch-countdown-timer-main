@@ -60,6 +60,7 @@ body .cInterface-Main-TimerList-Items .cBg {
   padding: 0.5rem;
   border-radius: 0.5rem;
   box-shadow: 0rem 0.3rem 0.1rem rgba(52, 54, 80, 0.2);
+  perspective: 800px;
 }
 body .cInterface-Main-TimerList-Items .cBg::before {
   content: "";
@@ -94,6 +95,9 @@ body .cInterface-Main-TimerList-Items .cBg .flip-card {
   width: 2ch;
   text-align: center;
   display: inline-block;
+  transform-style: preserve-3d;
+  transition: transform 0.6s ease;
+  backface-visibility: hidden;
 }
 body .cInterface-Footer {
   display: grid;

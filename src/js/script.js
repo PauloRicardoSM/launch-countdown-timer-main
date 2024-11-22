@@ -17,16 +17,36 @@ $(document).ready(function() {
         const seconds = Math.floor((timeLeft % (1000 * 60)) / 1000).toString().padStart(2, '0');
 
         // Updates timer elements in HTML
-        $("#iDays").text(days);
-        $("#iHours").text(hours);
-        $("#iMinutes").text(minutes);
-        $("#iSeconds").text(seconds);
+        // $("#iDays").text(days);
+        // $("#iHours").text(hours);
+        // $("#iMinutes").text(minutes);
+        // $("#iSeconds").text(seconds);
+        updateFlip("#iDays", days, "#iBgFlipDays");
+        updateFlip("#iHours", hours, "#flipHours");
+        updateFlip("#iMinutes", minutes, "#flipMinutes");
+        updateFlip("#iSeconds", seconds, "#flipSeconds");
+    }
 
-        gsap.to(".flip-card", {
-            rotationX: 180,
-            duration: 1,
-            ease: "powe2.inOut"
-        });
+    function updateFlip(selectorText, newValue, flipBG) {
+        const element = $(selectorText);
+        const currentValue = element.text();
+        const flipElement = $(flipBG);
+
+        element.text(newValue);
+        
+        // gsap.to( flipElement, {
+        //     rotatationX: -180,
+        //     duration: 1,
+        //     ease: "power2.inOut",
+        //     onComplete: function () {
+        //         element.text(newValue);
+        //         gsap.set(flipElement, { rotationX: 0});
+        //     },
+        // });
+
+        // if(currentValue !== newValue) {
+            
+        // }
     }
 
     const timerInterval = setInterval(updateTimer, 1000);
