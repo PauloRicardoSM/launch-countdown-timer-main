@@ -55,12 +55,11 @@ body .cInterface-Main-TimerList-Items p {
   margin-top: 0.5rem;
 }
 body .cInterface-Main-TimerList-Items .cBg {
-  position: relative;
   font-weight: 800;
   padding: 0.5rem;
   border-radius: 0.5rem;
   box-shadow: 0rem 0.3rem 0.1rem rgba(52, 54, 80, 0.2);
-  perspective: 800px;
+  perspective: 1000px;
 }
 body .cInterface-Main-TimerList-Items .cBg::before {
   content: "";
@@ -98,6 +97,7 @@ body .cInterface-Main-TimerList-Items .cBg .flip-card {
   transform-style: preserve-3d;
   transition: transform 0.6s ease;
   backface-visibility: hidden;
+  transition: transform 0.5s ease-in-out;
 }
 body .cInterface-Footer {
   display: grid;
