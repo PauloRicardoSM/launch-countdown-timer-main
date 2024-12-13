@@ -99,6 +99,26 @@ body .cInterface-Main-TimerList-Items .cBg .flip-card {
   backface-visibility: hidden;
   transition: transform 0.5s ease-in-out;
 }
+@media (min-width: 768px) {
+  body .cInterface-Main h1 {
+    margin-top: 5rem;
+    font-size: 2rem;
+  }
+  body .cInterface-Main-TimerList-Items .cBg .flip-card {
+    font-size: 3.5rem;
+  }
+}
+@media (min-width: 1023px) {
+  body .cInterface-Main h1 {
+    font-size: 1.5rem;
+  }
+  body .cInterface-Main-TimerList-Items p {
+    font-size: 0.8rem;
+  }
+  body .cInterface-Main-TimerList-Items .cBg .flip-card {
+    font-size: 5rem;
+  }
+}
 body .cInterface-Footer {
   display: grid;
   grid-template-rows: 90% 10%;
@@ -112,6 +132,8 @@ body .cInterface-Footer-SocialMidias {
   justify-items: center;
   gap: 2rem;
   margin-top: 5rem;
+  margin-bottom: 1rem;
+  align-self: end;
 }
 body .cInterface-Footer-SocialMidias i {
   font-size: 2rem;
@@ -125,4 +147,20 @@ body .cInterface-Footer .attribution {
 body .cInterface-Footer .attribution a {
   color: hsl(237, 18%, 59%);
   text-decoration: none;
+}
+@media (min-width: 768px) {
+  body .cInterface-Footer-SocialMidias i {
+    font-size: 3rem;
+  }
+}
+@media (min-width: 1439px) {
+  body .cInterface-Footer-SocialMidias i:hover {
+    color: hsl(345, 95%, 68%);
+  }
+}
+@media (min-width: 1023px) {
+  body .cInterface {
+    background-position: bottom right 0rem;
+    background-size: contain;
+  }
 }/*# sourceMappingURL=style.css.map */

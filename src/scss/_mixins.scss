@@ -9,3 +9,15 @@
         @content;
     }
 }
+
+@mixin desktop {
+    @media(min-width: 1023px) {
+        @content;
+    }
+}
+
+@mixin largeDesktop {
+    @media(min-width: 1439px) {
+        @content;
+    }
+}
