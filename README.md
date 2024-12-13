@@ -30,7 +30,7 @@ Users should be able to:
 
 | Mobile View | Tablets View | Desktop View |
 |:---:|:---:|:---:|
-| ![mortgage-mobile-view](https://github.com/user-attachments/assets/350b5389-2467-4b94-b4e7-a2a8f0364757) | ![mortgage-tablet-view](https://github.com/user-attachments/assets/c33634f7-59e8-43f5-b726-9cf32957ca0c) | ![mortgage-desktop-view](https://github.com/user-attachments/assets/4143808d-eae0-496b-b2bc-74dfab611df5) |
+| ![mobile-view-launch](https://github.com/user-attachments/assets/8bb3eb15-5f58-4d4c-bf62-fd8648aafdde) | ![tablet-view-launch](https://github.com/user-attachments/assets/b41c028c-154b-48ac-8fa6-5befc7850321) | ![desktop-view-launch](https://github.com/user-attachments/assets/630e54a7-51f7-47f6-bd70-4de99398a803) |
 
 ### Links
 
