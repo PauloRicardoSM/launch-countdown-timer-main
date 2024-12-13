@@ -183,6 +183,7 @@ body {
                 &-SocialMidias {
                     i {
                         font-size: 3rem;
+                        
                     }
                 }
             }
@@ -191,6 +192,7 @@ body {
                 &-SocialMidias {
                     i:hover {
                         color: variables.$softRed;
+                        cursor: pointer;
                     }
                 }
             }

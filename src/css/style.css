@@ -156,6 +156,7 @@ body .cInterface-Footer .attribution a {
 @media (min-width: 1439px) {
   body .cInterface-Footer-SocialMidias i:hover {
     color: hsl(345, 95%, 68%);
+    cursor: pointer;
   }
 }
 @media (min-width: 1023px) {
