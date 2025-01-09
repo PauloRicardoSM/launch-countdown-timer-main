@@ -16,16 +16,14 @@ $(document).ready(function() {
         const minutes = Math.floor((timeLeft % (1000 * 60 * 60)) / (1000 * 60)).toString().padStart(2, '0');
         const seconds = Math.floor((timeLeft % (1000 * 60)) / 1000).toString().padStart(2, '0');
 
-        updateFlip("#iDays", days, "#iBgFlipDays");
-        updateFlip("#iHours", hours, "#flipHours");
-        updateFlip("#iMinutes", minutes, "#flipMinutes");
-        updateFlip("#iSeconds", seconds, "#flipSeconds");
+        updateFlip("#iDays", days);
+        updateFlip("#iHours", hours);
+        updateFlip("#iMinutes", minutes);
+        updateFlip("#iSeconds", seconds);
     }
 
-    function updateFlip(selectorText, newValue, flipBG) {
+    function updateFlip(selectorText, newValue) {
         const element = $(selectorText);
-        const currentValue = element.text();
-        const flipElement = $(flipBG);
 
         element.text(newValue);
     }
